@@ -33,8 +33,10 @@ const syncDatabase = async () => {
 /* SET UP EXPRESS APPLICATION */
 // Import Express application
 const express = require("express");
+const cors = require('cors');
 // Create an Express application called "app"
 const app = express();
+app.use(cors()); // Enable CORS for all routes
 
 /* SET UP ROUTES */
 // Import sub-routes and associated router functions
