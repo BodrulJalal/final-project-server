@@ -30,11 +30,32 @@ const seedDB = async () => {
 	const dummy_student = await Student.create({
 		firstname: "Joe",
       lastname: "Smith",
+	  email: "joe.smith@example.com", // Add the email field
+  	gpa: 4.0, // Add the gpa field
+  	imageUrl: "https://img.freepik.com/premium-vector/back-school-cartoon-boy-student-showing-fingers-up_46527-623.jpg", 
 	});
 	// Create a new student for a campus
 	const dummy_student2 = await Student.create({
 		firstname: "Mary",
       lastname: "Johnson",
+	  email: "mary.johnson@example.com", // Add the email field
+	  gpa: 2.43, // Add the gpa field
+	});
+	// Create a new student for a campus
+	const dummy_student3 = await Student.create({
+		firstname: "Jenny",
+      lastname: "Jane",
+	  email: "jenny.jane@example.com", // Add the email field
+	  gpa: 3.1, // Add the gpa field
+	  imageUrl: "https://img.freepik.com/premium-vector/student-girl-illustration-cartoon-icon_592929-13.jpg",
+	});
+	// Create a new student for a campus
+	const dummy_student4 = await Student.create({
+		firstname: "Jacob",
+      lastname: "ErrorPic",
+	  email: "jacob.errorpic@example.com", // Add the email field
+	  gpa: 3.84, // Add the gpa field
+	  imageUrl: "google.com", //error profile pic
 	});
 
 	// Add students to campuses
